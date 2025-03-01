@@ -76,7 +76,7 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
 
     if (isNotEmptyString(OPENAI_API_BASE_URL)) {
       // if find /v1 in OPENAI_API_BASE_URL then use it
-      if (OPENAI_API_BASE_URL.includes('/v1'))
+      if (OPENAI_API_BASE_URL.includes('/v1') || OPENAI_API_BASE_URL.includes('ark.cn-beijing'))
         options.apiBaseUrl = `${OPENAI_API_BASE_URL}`
       else
         options.apiBaseUrl = `${OPENAI_API_BASE_URL}/v1`

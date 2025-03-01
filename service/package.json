@@ -21,6 +21,7 @@
     "clean": "rimraf build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "bootstrap": "pnpm install",
     "common:cleanup": "rimraf node_modules && rimraf pnpm-lock.yaml"
   },
   "dependencies": {
